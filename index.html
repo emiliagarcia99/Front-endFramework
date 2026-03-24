@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Framework</title>
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+
+        <!-- sidebar -->
+        <aside class="col-12 col-md-3 col-lg-2 sidebar p-0">
+          <div class="sidebar-wrapper d-flex flex-column h-100">
+
+            <!-- brand -->
+            <div class="brand d-flex align-items-center px-4 py-4">
+              <span class="brand-dot me-3"></span>
+              <h1 class="h5 m-0">Dashboard kit</h1>
+            </div>
+
+            <!-- sidebar -->
+            <nav class="flex-grow-1">
+              <ul class="nav flex-column sidebar-nav pt-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-pie-chart-fill me-3"></i>
+                    Overview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-ticket-detailed me-3"></i>
+                    Tickets
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-lightbulb me-3"></i>
+                    Ideas
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-people me-3"></i>
+                    Contacts
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-person-badge me-3"></i>
+                    Agents
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-journal-text me-3"></i>
+                    Articles
+                  </a>
+                </li>
+              </ul>
+
+              <hr class="sidebar-divider">
+
+              <ul class="nav flex-column sidebar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-gear me-3"></i>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-award me-3"></i>
+                    Subscription
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- dashboard area -->
+        <div class="col-12 col-md-9 col-lg-10 p-0 dashboard-area">
+
+          <!-- header -->
+          <header class="dashboard-header">
+            <div class="container-fluid px-4 px-lg-5 py-4">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <h2 class="page-title m-0">Overview</h2>
+
+                <div class="d-flex align-items-center gap-3 gap-lg-4 header-actions">
+                  <button class="btn header-icon-btn p-0" type="button" aria-label="search">
+                    <i class="bi bi-search"></i>
+                  </button>
+
+                  <button class="btn header-icon-btn p-0 position-relative" type="button" aria-label="notifications">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="notification-dot"></span>
+                  </button>
+
+                  <div class="header-divider d-none d-sm-block"></div>
+
+                  <div class="d-flex align-items-center gap-3 user-info">
+                    <span class="user-name">Ary James</span>
+                    <img
+                      src="images/profile.png"
+                      alt="user profile"
+                      class="rounded-circle user-avatar"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- main content -->
+          <main class="dashboard-content px-4 px-lg-5 pb-5">
+
+            <!-- summary blocks -->
+            <section class="summary-section mb-4">
+              <div class="row g-4">
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <article class="card summary-card h-100 text-center">
+                    <div class="card-body py-4">
+                      <h3 class="summary-title">Unresolved</h3>
+                      <p class="summary-number mb-0">60</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <article class="card summary-card h-100 text-center">
+                    <div class="card-body py-4">
+                      <h3 class="summary-title">Overdue</h3>
+                      <p class="summary-number mb-0">16</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <article class="card summary-card h-100 text-center">
+                    <div class="card-body py-4">
+                      <h3 class="summary-title">Open</h3>
+                      <p class="summary-number mb-0">43</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <article class="card summary-card h-100 text-center">
+                    <div class="card-body py-4">
+                      <h3 class="summary-title">On hold</h3>
+                      <p class="summary-number mb-0">64</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <!-- today's trends -->
+            <section class="trends-section mb-4">
+              <article class="card dashboard-card">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-12 col-xl-8">
+                      <div class="trends-main p-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+                          <div>
+                            <h3 class="content-title mb-1">Today’s trends</h3>
+                            <p class="content-subtitle mb-0">as of 23 may 2026, 11:11 PM</p>
+                          </div>
+
+                          <div class="d-flex align-items-center gap-4 trends-legend">
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="legend-line legend-line-today"></span>
+                              <span class="legend-text">Today</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                              <span class="legend-line legend-line-yesterday"></span>
+                              <span class="legend-text">Yesterday</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- chart image -->
+                        <div class="chart-area">
+                          <img
+                            src="images/trends-graph.png"
+                            alt="today's trends graph"
+                            class="img-fluid w-100 chart-image"
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                      <div class="trends-stats h-100">
+                        <div class="trend-stat-box">
+                          <p class="trend-stat-label">Resolved</p>
+                          <h4 class="trend-stat-value">449</h4>
+                        </div>
+
+                        <div class="trend-stat-box">
+                          <p class="trend-stat-label">Received</p>
+                          <h4 class="trend-stat-value">426</h4>
+                        </div>
+
+                        <div class="trend-stat-box">
+                          <p class="trend-stat-label">Average first response time</p>
+                          <h4 class="trend-stat-value">33m</h4>
+                        </div>
+
+                        <div class="trend-stat-box">
+                          <p class="trend-stat-label">Average response time</p>
+                          <h4 class="trend-stat-value">3h 8m</h4>
+                        </div>
+
+                        <div class="trend-stat-box">
+                          <p class="trend-stat-label">Resolution within SLA</p>
+                          <h4 class="trend-stat-value">94%</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <!-- bottom content -->
+            <section class="bottom-section mb-4">
+              <div class="row g-4">
+
+                <!-- unresolved tickets seccion -->
+                <div class="col-12 col-xl-6">
+                  <article class="card dashboard-card h-100">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+                        <div>
+                          <h3 class="content-title mb-1">Unresolved tickets</h3>
+                          <p class="content-subtitle mb-0">Group: Support</p>
+                        </div>
+                        <a href="#" class="small-link">View details</a>
+                      </div>
+
+                      <ul class="list-group list-group-flush custom-list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <span>Waiting on Feature Request</span>
+                          <span class="item-number">4238</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <span>Awaiting Customer Response</span>
+                          <span class="item-number">1005</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <span>Awaiting Developer Fix</span>
+                          <span class="item-number">914</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <span>Pending</span>
+                          <span class="item-number">281</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- tasks seccion -->
+                <div class="col-12 col-xl-6">
+                  <article class="card dashboard-card h-100">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+                        <div>
+                          <h3 class="content-title mb-1">Tasks</h3>
+                          <p class="content-subtitle mb-0">Today</p>
+                        </div>
+                        <a href="#" class="small-link">View all</a>
+                      </div>
+
+                      <div class="task-input-row d-flex align-items-center justify-content-between mb-3">
+                        <input
+                          type="text"
+                          class="form-control task-input border-0 shadow-none p-0"
+                          placeholder="Create a new task"
+                        >
+                        <button class="btn task-add-btn p-0" type="button" aria-label="add task">
+                          <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                      </div>
+
+                      <div class="task-list">
+                        <div class="task-item d-flex justify-content-between align-items-center">
+                          <div class="form-check m-0 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox" id="task-1">
+                            <label class="form-check-label task-label" for="task-1">
+                              Finish ticket update
+                            </label>
+                          </div>
+                          <span class="badge task-badge badge-urgent">Urgent</span>
+                        </div>
+
+                        <div class="task-item d-flex justify-content-between align-items-center">
+                          <div class="form-check m-0 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox" id="task-2">
+                            <label class="form-check-label task-label" for="task-2">
+                              Create a new ticket example
+                            </label>
+                          </div>
+                          <span class="badge task-badge badge-new">New</span>
+                        </div>
+
+                        <div class="task-item d-flex justify-content-between align-items-center">
+                          <div class="form-check m-0 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox" id="task-3">
+                            <label class="form-check-label task-label" for="task-3">
+                              Update ticket report
+                            </label>
+                          </div>
+                          <span class="badge task-badge badge-default">Default</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+           <!-- advanced bootstrap component -->
+            <section class="modal-demo-section">
+                <article class="card dashboard-card">
+                     <div class="card-body p-4 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
+                        <div>
+                            <h3 class="content-title mb-1">Support modal</h3>
+                            <p class="content-subtitle mb-0">This button opens an advanced bootstrap modal component</p>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary modal-demo-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#supportModal">
+                            Open support modal
+                        </button>
+                      </div>
+                </article>
+            </section>
+           </main>
+         </div>
+       </div>
+    </div>
+
+    <!-- bootstrap modal -->
+    <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="supportModalLabel">Support team update</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Hi Amanda, I included this modal as an advanced bootstrap component for the assignment.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+  </body>
+</html>
